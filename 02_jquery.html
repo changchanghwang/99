@@ -36,8 +36,7 @@
             // 5. 만약 이메일이 아니면 '이메일이 아닙니다.' 라는 얼럿 띄우기
             let email = $('#input-q2').val();
             if (email.includes('@')){
-                let email1 = $('#input-q2').split('@')[1];
-                let email2 = $('#input-q2').split('.')[0];
+                let email2 = $('#input-q2').split('@')[1].split('.')[0];
                 alert(email2);
             } else{
                 alert('이메일이 아닙니다.');
